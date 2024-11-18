@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Data Model - School Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4caf50;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+        td {
+            background-color: #f2f2f2;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #4caf50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Model for School Management System</h1>
+        
+        <h2>1. Student Table</h2>
+        <table>
+            <tr>
+                <th>Attribute Name</th>
+                <th>Data Type</th>
+            </tr>
+            <tr>
+                <td>Student_ID</td>
+                <td>INT (Primary Key)</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>VARCHAR(100)</td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td>VARCHAR(10)</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>INT</td>
+            </tr>
+            <tr>
+                <td>Subject_ID</td>
+                <td>INT (Foreign Key)</td>
+            </tr>
+        </table>
+        
+        <h2>2. Teacher Table</h2>
+        <table>
+            <tr>
+                <th>Attribute Name</th>
+                <th>Data Type</th>
+            </tr>
+            <tr>
+                <td>Teacher_ID</td>
+                <td>INT (Primary Key)</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>VARCHAR(100)</td>
+            </tr>
+            <tr>
+                <td>Subject_Taught</td>
+                <td>VARCHAR(50)</td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>VARCHAR(50)</td>
+            </tr>
+        </table>
+        
+        <h2>3. Subject Table</h2>
+        <table>
+            <tr>
+                <th>Attribute Name</th>
+                <th>Data Type</th>
+            </tr>
+            <tr>
+                <td>Subject_ID</td>
+                <td>INT (Primary Key)</td>
+            </tr>
+            <tr>
+                <td>Subject_Name</td>
+                <td>VARCHAR(50)</td>
+            </tr>
+            <tr>
+                <td>Teacher_ID</td>
+                <td>INT (Foreign Key)</td>
+            </tr>
+        </table>
+
+        <a href="home.html">Back to Home</a>
+    </div>
+</body>
+</html>
